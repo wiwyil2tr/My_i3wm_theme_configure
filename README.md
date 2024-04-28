@@ -39,4 +39,4 @@ Execute:
 ```bash
 ./install.sh
 ```
-After Installation. If you have installed vim config files. Remember to run :PlugInstall after the fist time starting vim
+After Installation. If you have installed vim config files. Remember to run :PlugInstall at the fist time starting vim
