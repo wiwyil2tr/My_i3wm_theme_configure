@@ -1,0 +1,14 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "phobian347@outlook.com",
+                "Name": "Mark Whittaker"
+            }
+        ],
+        "Id": "expose",
+        "License": "CC-BY-SA-4.0",
+        "Name": "Expose"
+    },
+    "X-KDE-PlasmaImageWallpaper-AccentColor": "#0569fb"
+}
