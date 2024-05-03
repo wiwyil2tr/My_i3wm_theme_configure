@@ -1,12 +1,16 @@
-## i3wm Beautification Tutorial
+![Screenshot_20240503_100724](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/03b6eb4d-6e09-495e-8509-2a87d58cfbe9)## i3wm Beautification Tutorial
 
 ### Introduction
 
 i3wm is a stable and efficient tiling window manager. This script can configure i3wm to the style shown in the screenshots with just one click, and you can choose whether to configure vim, ranger, or zsh at the same time.
-![Screenshot_20240427_173216](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/664e5e00-2417-45e6-819b-af89e5aebf9c)
-![Screenshot_20240427_173250](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/3e4da4b2-7e3f-4ab7-a357-67dba58ee091)
-![Screenshot_20240427_173525](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/bd8e6212-2218-4476-a3fa-1d10c12611ee)
-![Screenshot_20240427_173554](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/e0e22c59-a21c-4bc3-ba8e-308708b0c2b0)
+![Screenshot_20240503_100724](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/bac0efa1-d279-4b2e-8cf2-4d269adde702)
+![Screenshot_20240503_100815](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/78967444-83a9-41be-a764-be5231ba393a)
+![Screenshot_20240503_101014](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/8a7567c3-0eb6-4295-b5b7-2869cd329e24)
+![Screenshot_20240503_101048](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/2a3f7bf7-4b03-42e4-b4c6-43c91448179c)
+![Screenshot_20240503_101110](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/345153bb-66c1-4831-b01c-9e1ddc7e9c25)
+![Screenshot_20240503_101145](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/d8ae8be2-b6ea-459b-ae37-fcc2b2b38c75)
+![Screenshot_20240503_101932](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/fe188bf8-2068-4729-8527-b775c18997a1)
+
 
 * This script also comes with some wallpapers.
 * This script also includes touchpad settings, including enabling tap-to-click, multi-touch gestures, and other features.
