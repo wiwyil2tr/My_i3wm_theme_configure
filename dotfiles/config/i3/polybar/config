@@ -83,16 +83,6 @@ wm-name = i3
 locale = en_GB.UTF-8
 wm-restack = i3
 
-tray-position = right
-tray-detached = false
-tray-maxsize = 16
-pesudo-transparent = false
-tray-background = ${color.BACKGROUND}
-tray-offset-x = 0
-tray-offset-y = 0
-tray-padding = 0
-tray-scale = 1.0
-
 enable-ipc = true
 
 [bar/top]
@@ -102,6 +92,16 @@ modules-left =title
 modules-center = date lunar  
 modules-right =cpu memory volume backlight battery 
 enable-ipc = true
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 16
+pesudo-transparent = false
+tray-background = ${color.BACKGROUND}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
 
 [bar/bottom]
 inherit = bar/main
