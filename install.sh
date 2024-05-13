@@ -26,14 +26,14 @@ if [ $? -ne 0 ]; then
 fi
 case "$distro" in
 	"Arch")
-		sudo pacman -S xfce4-screensaver xfce4-power-manager polybar i3-gaps conky copyq dunst blueman kitty ranger rofi ccal lunar-date xbindkeys brightnessctl neofetch
+		sudo pacman -S xfce4-screensaver xfce4-power-manager polybar i3-gaps conky copyq dunst blueman kitty ranger rofi ccal lunar-date xbindkeys brightnessctl neofetch redshift-gtk   
 		yay -S i3lock-fancy-git lunar-date
 		;;
 	"Debian")
-		sudo apt install xfce4-screensaver xfce4-power-manager i3-gaps polybar conky copyq dunst blueman kitty ranger rofi i3lock-fancy ccal lunar-date xbindkeys brightnessctl neofetch
+		sudo apt install xfce4-screensaver xfce4-power-manager i3-gaps polybar conky copyq dunst blueman kitty ranger rofi i3lock-fancy ccal lunar-date xbindkeys brightnessctl neofetch redshift-gtk   
 		;;
 	"Red Hat")
-		sudo yum install xfce4-screensaver xfce4-power-manager  mako nwg-bar polybar swaylock waybar kitty ccal brightnessctl i3lock-fancy neofetch
+		sudo yum install xfce4-screensaver xfce4-power-manager  mako nwg-bar polybar swaylock waybar kitty ccal brightnessctl i3lock-fancy neofetch redshift-gtk   
 		;;
 esac
 sudo  cp /usr/share/locale/zh_CN/LC_MESSAGES/lunar-date.mo /usr/share/locale/en_GB/LC_MESSAGES/lunar-date.mo 
@@ -71,6 +71,7 @@ fi
 if [[ $configurations =~ "vim(install by linking)" ]] then
 	sudo ln -sf ${HOME}/My_i3wm_theme_configure/dotfiles/vim ${HOME}/.vim
 	sudo ln -sf ${HOME}/My_i3wm_theme_configure/dotfiles/vimrc ${HOME}/.vimrc
+	sudo ln -s ~/.vimrc /root
 	sudo ln -s ~/.vimrc /root
 	echo "vim configuration installed"
 fi
