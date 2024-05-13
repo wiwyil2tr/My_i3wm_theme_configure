@@ -2,7 +2,7 @@
 
 ### Introduction
 
-i3wm is a stable and efficient tiling window manager. This script can configure i3wm to the style shown in the screenshots with just one click, and you can choose whether to configure vim, ranger, or zsh at the same time.
+i3wm is a stable and efficient tiling window manager. This script can configure i3wm to the style shown in the screenshots with just one click, and you can choose whether to configure vim or zsh at the same time.
 ![Screenshot_20240503_100724](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/bac0efa1-d279-4b2e-8cf2-4d269adde702)
 ![Screenshot_20240503_100815](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/78967444-83a9-41be-a764-be5231ba393a)
 ![Screenshot_20240503_101014](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/8a7567c3-0eb6-4295-b5b7-2869cd329e24)
@@ -17,7 +17,7 @@ i3wm is a stable and efficient tiling window manager. This script can configure 
 * Dependencies:
   
   ```
-  xfce4-screensaver xfce4-power-manager i3-gaps conky copyq dunst blueman kitty ranger rofi polybar ccal lunar-date xbindkeys brightnessctl i3lock-fancy-git neofetch ranger vim (optional) zsh (optional)
+ redshift-gtk xfce4-screensaver xfce4-power-manager i3-gaps conky copyq dunst blueman kitty ranger rofi polybar ccal lunar-date xbindkeys brightnessctl i3lock-fancy-git neofetch ranger vim (optional) zsh (optional)
   ```
 
 * Recommended installations (not included in the script, need to be installed separately):
