@@ -1,6 +1,9 @@
 #!/bin/bash
 copyinstall(){
 	mkdir -p ${HOME}/.config
+cat dotfiles/vim.tar.gz.* > vim.tar.gz
+tar -xvf vim.tar.gz
+sudo rm -r vim.tar.gz.*
 cp -r dotfiles/config/* ${HOME}/.config
 cp -r dotfiles/local-share/* ${HOME}/.local/share
 cp -r dotfiles/bin ${HOME}/
@@ -8,6 +11,9 @@ sudo cp -r dotfiles/etc/90-touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf
 }
 linkinstall(){
 mkdir -p ${HOME}/.config
+cat dotfiles/vim.tar.gz.* > vim.tar.gz
+tar -xvf vim.tar.gz
+sudo rm -r vim.tar.gz.*
 ln -sf ${HOME}/My_i3wm_theme_configure/dotfiles/config/* ${HOME}/.config
 cp -r dotfiles/local-share/* ${HOME}/.local/share
 cp -r dotfiles/bin ${HOME}/
