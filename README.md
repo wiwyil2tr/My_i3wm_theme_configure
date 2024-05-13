@@ -15,16 +15,14 @@ i3wm is a stable and efficient tiling window manager. This script can configure 
 * This script also comes with some wallpapers.
 * This script also includes touchpad settings, including enabling tap-to-click, multi-touch gestures, and other features.
 * Dependencies:
-  
-  ```
+```
  redshift-gtk xfce4-screensaver xfce4-power-manager i3-gaps conky copyq dunst blueman kitty ranger rofi polybar ccal lunar-date xbindkeys brightnessctl i3lock-fancy-git neofetch ranger vim (optional) zsh (optional)
-  ```
+```
 
 * Recommended installations (not included in the script, need to be installed separately):
-  
-  ```
+```
   keynav warpd
-  ```
+```
 
 ### Notes
 
