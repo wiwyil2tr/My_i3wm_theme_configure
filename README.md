@@ -1,4 +1,5 @@
-![Screenshot_20240503_100724](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/03b6eb4d-6e09-495e-8509-2a87d58cfbe9)## i3wm Beautification Tutorial
+![Screenshot_20240503_100724](https://github.com/wiwyil2tr/My_i3wm_theme_configure/assets/108447154/03b6eb4d-6e09-495e-8509-2a87d58cfbe9)
+## i3wm Beautification Tutorial
 
 ### Introduction
 
