@@ -4,8 +4,10 @@ copyinstall(){
 cat dotfiles/vim.tar.gz.* > vim.tar.gz
 tar -xvf vim.tar.gz
 sudo rm -r vim.tar.gz.*
+mv vim* dotfiles/
 cp -r dotfiles/config/* ${HOME}/.config
-cp -r dotfiles/local-share/* ${HOME}/.local/share
+cp -r dotfiles/.conky ${HOME}/
+cp -r dotfiles/wallpapers `xdg-user-dir PICTURES`
 cp -r dotfiles/bin ${HOME}/
 sudo cp -r dotfiles/etc/90-touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf
 }
@@ -14,9 +16,11 @@ mkdir -p ${HOME}/.config
 cat dotfiles/vim.tar.gz.* > vim.tar.gz
 tar -xvf vim.tar.gz
 sudo rm -r vim.tar.gz.*
+mv vim* dotfiles/
 ln -sf ${HOME}/My_i3wm_theme_configure/dotfiles/config/* ${HOME}/.config
-cp -r dotfiles/local-share/* ${HOME}/.local/share
+cp -r dotfiles/wallpapers `xdg-user-dir PICTURES`
 cp -r dotfiles/bin ${HOME}/
+ln -sf dotfiles/.conky ${HOME}/
 sudo ln -sf ${HOME}/My_i3wm_theme_configure/dotfiles/etc/90-touchpad.conf /etc/X11/xorg.conf.d/90-touchpad.conf
 }
 if ! whiptail --title "Welcome" --yesno "Welcome to i3wm Theme Configure!\nPlease read README.md first. \nThis script will automatically install the packages below:\n xfce4-screensaver xfce4-power-manager i3-gaps conky copyq dunst blueman kitty ranger rofi ccal lunar-date xbindkeys brightnessctl i3lock-fancy-git neofetch ranger\nand then you can choose copy or link the config files to the corresponding directories. Do you want to continue?" 20 60; then
@@ -32,14 +36,14 @@ if [ $? -ne 0 ]; then
 fi
 case "$distro" in
 	"Arch")
-		sudo pacman -S xfce4-screensaver xfce4-power-manager polybar i3-gaps conky copyq dunst blueman kitty ranger rofi ccal lunar-date xbindkeys brightnessctl neofetch redshift-gtk   
-		yay -S i3lock-fancy-git lunar-date
+		sudo pacman -S xfce4-screensaver xfce4-power-manager polybar i3-gaps conky copyq dunst blueman kitty ranger rofi ccal lunar-date xbindkeys brightnessctl neofetch light ttf-font-awesome autotiling
+		yay -S i3lock-fancy-git lunar-date 
 		;;
 	"Debian")
-		sudo apt install xfce4-screensaver xfce4-power-manager i3-gaps polybar conky copyq dunst blueman kitty ranger rofi i3lock-fancy ccal lunar-date xbindkeys brightnessctl neofetch redshift-gtk   
+		sudo apt install xfce4-screensaver xfce4-power-manager i3-gaps polybar conky copyq dunst blueman kitty ranger rofi i3lock-fancy ccal lunar-date xbindkeys brightnessctl neofetch light ttf-font-awesome autotiling
 		;;
 	"Red Hat")
-		sudo yum install xfce4-screensaver xfce4-power-manager  mako nwg-bar polybar swaylock waybar kitty ccal brightnessctl i3lock-fancy neofetch redshift-gtk   
+		sudo yum install xfce4-screensaver xfce4-power-manager  mako nwg-bar polybar swaylock waybar kitty ccal brightnessctl i3lock-fancy neofetch light ttf-font-awesome autotiling
 		;;
 esac
 sudo  cp /usr/share/locale/zh_CN/LC_MESSAGES/lunar-date.mo /usr/share/locale/en_GB/LC_MESSAGES/lunar-date.mo 
@@ -77,7 +81,6 @@ fi
 if [[ $configurations =~ "vim(install by linking)" ]] then
 	sudo ln -sf ${HOME}/My_i3wm_theme_configure/dotfiles/vim ${HOME}/.vim
 	sudo ln -sf ${HOME}/My_i3wm_theme_configure/dotfiles/vimrc ${HOME}/.vimrc
-	sudo ln -s ~/.vimrc /root
 	sudo ln -s ~/.vimrc /root
 	echo "vim configuration installed"
 fi
